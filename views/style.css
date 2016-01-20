@@ -1,0 +1,36 @@
+*{
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background: #2e2e2e;
+	padding: 8px;
+	color: #ffffff;
+}
+
+#canvas{
+	margin-top: 8px;
+	background: #ffffff;
+	display: block;
+	border: 5px solid #c19a6b;
+	cursor: none;
+}
+
+#color_box{
+	width: 32px;
+	height: 18px;
+	border: 2px solid #c19a6b;
+}
+
+.toolbar{
+	width: 500px;
+}
+
+.toolbar > *{
+	display: inline-block;
+}
+
+.btn{
+	float: right;
+}

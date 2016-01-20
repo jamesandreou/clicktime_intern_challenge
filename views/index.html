@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>James' Drawing App</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.4/socket.io.min.js"></script>
+</head>
+<body>
+	<div class='toolbar'>
+		<p>My Color:</p>
+		<p id='color_box'>&nbsp;</p>
+		<svg class='btn' id='erase_btn' viewBox='0 0 160 160' preserveAspectRatio="xMidYMid meet" width='24px' height='24px'>
+			 <g id="erase_btn_inner" transform="translate(0 -892.36)" fill="#5c5c5c">
+				<rect id="rect4200" transform="matrix(-.71470 .69943 -.69494 -.71907 0 0)" height="70.839" width="88.253" y="-786.25" x="554.64"/>
+				<rect id="rect4223" transform="matrix(-.72150 .69241 -.69533 -.71869 0 0)" height="70.839" width="28.748" y="-793.11" x="653.46"/>
+			</g>
+		</svg>
+		<svg class='btn' id='draw_btn' viewBox='0 0 160 160' preserveAspectRatio="xMidYMid meet" width='24px' height='24px'>
+			<g id="draw_btn_inner" transform="translate(0 -892.36)" fill="#5c5c5c">
+			<rect id="rect4136" transform="rotate(-45.779)" height="33.536" width="33.536" y="721.02" x="-593.7"/>
+			<rect id="rect4200" transform="rotate(-45.779)" height="33.536" width="100.61" y="721.02" x="-701.36"/>
+			<path id="path4202" transform="matrix(.65832 -.49473 .43221 .58882 -348.43 425.91)" d="m-51.786 989.86-20.148-10.153-20.148-10.153 18.867-12.372 18.867-12.372 1.2808 22.525z"/>
+			</g>
+		</svg>
+	</div>
+	<canvas id="canvas" width="500" height="500"></canvas>
+	<script type="text/JavaScript" src="main.js"></script>
+</body>
+</html>
